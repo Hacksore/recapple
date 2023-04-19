@@ -17,11 +17,14 @@
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
+    "prisma": "^4.3.1",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {
+    "@prisma/client": "^4.3.1"
+  }
 }

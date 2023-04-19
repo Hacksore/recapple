@@ -28,13 +28,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           </Toolbar>
         </AppBar>
       </Box>
-      <Breadcrumbs aria-label="breadcrumb">
+      {/* <Breadcrumbs aria-label="breadcrumb">
         <Link href="/">Home</Link>
-        <Link color="inherit" href="/material-ui/getting-started/installation/">
-          Core
+        <Link color="inherit" href="/devices/watch">
+          Watch
         </Link>
-        <Typography color="text.primary">Breadcrumbs</Typography>
-      </Breadcrumbs>
+        <Typography color="text.primary">Series 8</Typography>
+      </Breadcrumbs> */}
       <Component {...pageProps} />
     </ThemeProvider>
   );

@@ -1,10 +1,24 @@
 import { Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/router";
+// import { prisma } from "database";
 
-export default function Device() {
+export async function getServerSideProps() {
+  // const products = await prisma.products.findMany();
+  // console.log(products);
+
+  return {
+    props: {
+      products: []
+    }
+  }
+}
+
+export default function Device({ products }: any) {
   const router = useRouter();
   const { slug } = router.query;
+
+  console.log(products);
 
   // not sure why we would not have a slug?
   if (!slug) {

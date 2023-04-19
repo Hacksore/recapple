@@ -1,7 +1,28 @@
-export default function Web() {
+import { Typography } from "@mui/material";
+import Link from "next/link";
+
+export default function Home() {
   return (
     <div>
-      <h1>Recapple index page</h1>
+      <Typography variant="h3">Recapple</Typography>
+
+      <Typography variant="h5">
+        <Link href="/devices/watch">
+        Apple Watch
+        </Link>
+      </Typography>
+
+      <Typography variant="h5">
+        <Link href="/devices/2022/watch/series-8">
+        Series 8
+        </Link>
+      </Typography>
+
+      <Typography variant="h5">
+        <Link href="/devices/2022/watch/se">
+       SE
+        </Link>
+      </Typography>
     </div>
   );
 }
